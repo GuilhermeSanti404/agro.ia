@@ -118,3 +118,407 @@
     </div>
   </div>
 </section>
+
+
+/* style.css */
+
+:root {
+  --cor-campo: #8BC34A;
+  --cor-cidade: #607D8B;
+  --cor-texto: #333;
+  --cor-fundo: #f4f4f4;
+  --fonte: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(to right, var(--cor-cidade) 50%, var(--cor-campo) 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  color: var(--cor-cidade);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--cor-campo);
+  color: white;
+}
+
+main {
+  padding: 2rem;
+}
+
+.bloco {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cidade {
+  border-left: 10px solid var(--cor-cidade);
+}
+
+.campo {
+  border-left: 10px solid var(--cor-campo);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #e8f5e9;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.depoimentos blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 5px solid var(--cor-campo);
+}
+
+footer {
+  text-align: center;
+  background-color: var(--cor-cidade);
+  color: white;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    background: var(--cor-campo);
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 80%;
+  }
+}
+
+/* style.css */
+
+:root {
+  --cor-campo: #8BC34A;
+  --cor-cidade: #607D8B;
+  --cor-texto: #333;
+  --cor-fundo: #f4f4f4;
+  --fonte: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(to right, var(--cor-cidade) 50%, var(--cor-campo) 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: white;
+  color: var(--cor-cidade);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--cor-campo);
+  color: white;
+}
+
+main {
+  padding: 2rem;
+}
+
+.bloco {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cidade {
+  border-left: 10px solid var(--cor-cidade);
+}
+
+.campo {
+  border-left: 10px solid var(--cor-campo);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #e8f5e9;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.depoimentos blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 5px solid var(--cor-campo);
+}
+
+footer {
+  text-align: center;
+  background-color: var(--cor-cidade);
+  color: white;
+  padding: 1rem;
+}
+
+/* Animação estilo jogo de plataforma */
+
+.plataforma {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#87ceeb, #fff);
+  height: 200px;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.chao {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #4CAF50;
+}
+
+.personagem {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  animation: andar 5s linear infinite, pular 1s ease-in-out infinite;
+}
+
+@keyframes andar {
+  0% { left: -50px; }
+  100% { left: 100%; }
+}
+
+@keyframes pular {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    background: var(--cor-campo);
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 80%;
+  }
+}
+
+.ia {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: white;
+  border-left: 10px solid var(--cor-campo);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.ia h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--cor-campo);
+}
+
+.ia p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pergunta {
+  margin-bottom: 1rem;
+}
+
+.pergunta input[type="radio"] {
+  display: none;
+}
+
+.pergunta label {
+  display: block;
+  background-color: #e8f5e9;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  border: 2px solid var(--cor-campo);
+}
+
+.pergunta label:hover {
+  background-color: #dcedc8;
+}
+
+.resposta {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scaleY(0.95);
+  transition: all 0.4s ease;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  border-left: 4px solid var(--cor-cidade);
+}
+
+.pergunta input:checked + label + .resposta {
+  max-height: 500px;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.ia {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: white;
+  border-left: 10px solid var(--cor-campo);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.ia h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--cor-campo);
+}
+
+.ia p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pergunta {
+  margin-bottom: 1rem;
+}
+
+.pergunta input[type="radio"] {
+  display: none;
+}
+
+.pergunta label {
+  display: block;
+  background-color: #e8f5e9;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  border: 2px solid var(--cor-campo);
+  color: var(--cor-texto);
+}
+
+.pergunta label:hover {
+  background-color: #dcedc8;
+}
+
+.resposta {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scaleY(0.95);
+  transition: all 0.4s ease;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  border-left: 4px solid var(--cor-cidade);
+  color: var(--cor-texto); /* agora o texto aparece corretamente */
+}
